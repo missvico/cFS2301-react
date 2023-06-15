@@ -1,23 +1,19 @@
-import logo from './logo.svg';
-import './App.css';
+import './App.scss';
+import Home from './views/Home'
+import Counter from './views/Counter'
+import Tasks from './views/Tasks'
+import StarwarsCharacters from './views/StarwarsCharacters'
+import Register from './views/Register'
+
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div>
+        {/* <Home username="Matias"/> */}
+        {/* <Counter/>
+        <Tasks/> */}
+        {/* <StarwarsCharacters/> */}
+        <Register/>
     </div>
   );
 }
