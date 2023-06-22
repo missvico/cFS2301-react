@@ -1,11 +1,8 @@
 import styles from './Character.module.css';
-import {Link} from 'react-router-dom'
 
 function CharacterCard({character}){
     const {name, height, mass, hair_color, skin_color, eye_color, birth_year} = character
-    const id = character.url.split("/")[5]
     return(
-        <Link to={`/starwars/${id}`}>
         <div className={styles.card}>
             <h3>{name}</h3>
             <ul>
@@ -29,7 +26,6 @@ function CharacterCard({character}){
                 </li>
             </ul>
         </div>
-        </Link>
     )
 };
 
